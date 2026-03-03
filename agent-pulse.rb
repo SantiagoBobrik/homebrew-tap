@@ -5,21 +5,21 @@
 class AgentPulse < Formula
   desc "A local event gateway for AI code agents"
   homepage "https://github.com/SantiagoBobrik/agent-pulse"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SantiagoBobrik/agent-pulse/releases/download/v0.2.0/agent-pulse_darwin_amd64.tar.gz"
-      sha256 "bc0a08ec602b087e7c3999118e2a5a43d620d4f3f6226ca821dece4b831774b3"
+      url "https://github.com/SantiagoBobrik/agent-pulse/releases/download/v0.3.0/agent-pulse_darwin_amd64.tar.gz"
+      sha256 "1a51e1c6787d3ab3a04ae1d39974ec3a2b6edb1b9f21bd4f483e3f31549a1d24"
 
       define_method(:install) do
         bin.install "agent-pulse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SantiagoBobrik/agent-pulse/releases/download/v0.2.0/agent-pulse_darwin_arm64.tar.gz"
-      sha256 "8337ada3791cc590933300977ee0b68e20f2652d889e3ac636988d53b07e1422"
+      url "https://github.com/SantiagoBobrik/agent-pulse/releases/download/v0.3.0/agent-pulse_darwin_arm64.tar.gz"
+      sha256 "36854e52754869d0ade3e73ebbe6d3c16ef79ab4a4312eff6bf6a2af85f10b3f"
 
       define_method(:install) do
         bin.install "agent-pulse"
@@ -29,15 +29,15 @@ class AgentPulse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SantiagoBobrik/agent-pulse/releases/download/v0.2.0/agent-pulse_linux_amd64.tar.gz"
-      sha256 "fee65e559a837ffe7497bddbe8ebc3ed2d25250b44164fbe91fed54eaab4d669"
+      url "https://github.com/SantiagoBobrik/agent-pulse/releases/download/v0.3.0/agent-pulse_linux_amd64.tar.gz"
+      sha256 "cfa7c6a538cd25354ce0726a0094cb7e36715ffdc28ca0dea5074e88899a05f0"
       define_method(:install) do
         bin.install "agent-pulse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SantiagoBobrik/agent-pulse/releases/download/v0.2.0/agent-pulse_linux_arm64.tar.gz"
-      sha256 "2a4d018da872d536636e54aaebd58fe911d0839a673f8ce5decc3e7610de3a82"
+      url "https://github.com/SantiagoBobrik/agent-pulse/releases/download/v0.3.0/agent-pulse_linux_arm64.tar.gz"
+      sha256 "f6b21d41c0be02a7b95145600cee85c045ea5c686f693a2f0522a991596c8a0c"
       define_method(:install) do
         bin.install "agent-pulse"
       end
